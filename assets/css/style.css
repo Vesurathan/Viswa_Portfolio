@@ -54,7 +54,12 @@ body {
 }
 img {
     max-width: 100%;
+    margin-left: 6px;
+    
+
 }
+
+.left-sidebar > 
 a {
     text-decoration: none;
 }
@@ -233,6 +238,7 @@ main.drake-main {
     transition: .3s;
     color: #999999;
     cursor: pointer;
+    text-decoration: none;
 }
 .menu li a.active,
 .menu li a:hover,
@@ -1369,6 +1375,7 @@ body .body-overlay {
 .contact-area .contact-content .contact-form .input-group.submit-btn-wrap {
     margin-bottom: 0;
     margin-top: 18px;
+    justify-content: center;
 }
 
 

@@ -121,11 +121,11 @@
                             <i class="lar la-comment"></i> <span>Testimonial</span>
                         </a>
                     </li> -->
-                    <li>
+                    <!-- <li>
                         <a class="scroll-to" href="#contact">
                             <i class="las la-envelope"></i> <span>Contact</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 
@@ -186,11 +186,11 @@
                 <span>Testimonial</span> <i class="lar la-comment"></i>
             </a>
         </li> -->
-        <li>
+        <!-- <li>
             <a class="scroll-to" href="#contact">
                 <span>Contact</span> <i class="las la-envelope"></i>
             </a>
-        </li>
+        </li> -->
     </ul>
 
     <div class="left-sidebar">
@@ -200,7 +200,7 @@
         </div>
         <img class="me" src="./assets/images/viswa-2.png" alt="Me">
         <h2 class="email">vesurathan@gmail.com</h2>
-        <h2 class="address">Base in Jaffna Town, Srilanka</h2>
+        <h2 class="address">Base in Jaffna Town,<br> Sri Lanka</h2>
         <p class="copyright">&copy; 2024 Nexus dev. All Rights Reserved</p>
         <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
             <li>
@@ -231,7 +231,7 @@
                     </div>
                     <img class="me" src="./assets/images/viswa-2.png" alt="Me">
                     <h2 class="email">vesurathan@gmail.com</h2>
-                    <h2 class="address">Base in Jaffna Town, Srilanka</h2>
+                    <h2 class="address">Base in Jaffna Town, <br>Sri Lanka</h2>
                     <p class="copyright">&copy; 2024 Nexus dev. All Rights Reserved</p>
                     <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
                         <li>
@@ -517,7 +517,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <h2><a href="">Apptimate - ERP Website</a></h2>
+                                        <h2><a href="">Apptimate ONE - HR System</a></h2>
                                     </div>
                                 </div>
 
@@ -782,7 +782,7 @@
                     </div>
                 </section> -->
 
-
+<!-- 
                 <section class="contact-area page-section scroll-content" id="contact">
                     <div class="custom-container">
                         <div class="contact-content content-width">
@@ -797,80 +797,45 @@
                             <h3 class="scroll-animation" data-animation="fade_from_bottom">vesurathan@gmail.com</h3>
                             <p id="required-msg">* Marked fields are required to fill.</p>
 
-                            <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST"
-                                action="mailto:vesurathan@gmail.com">
+                            <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST" action="sendmail.php">
                                 <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
                                     Your message was sent successfully.
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="input-group">
-                                            <label for="full-name">full Name <sup>*</sup></label>
-                                            <input type="text" name="full-name" id="full-name"
-                                                placeholder="Your Full Name">
+                                            <label for="full-name">Full Name <sup>*</sup></label>
+                                            <input type="text" name="full-name" id="full-name" placeholder="Your Full Name" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-group">
                                             <label for="email">Email <sup>*</sup></label>
-                                            <input type="email" name="email" id="email" placeholder="Your email adress">
+                                            <input type="email" name="email" id="email" placeholder="Your email address" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-group">
-                                            <label for="phone-number">phone <span>(optional)</span></label>
-                                            <input type="text" name="phone-number" id="phone-number"
-                                                placeholder="Your number phone">
+                                            <label for="phone-number">Phone <span>(optional)</span></label>
+                                            <input type="text" name="phone-number" id="phone-number" placeholder="Your phone number">
                                         </div>
                                     </div>
-                                    <!-- <div class="col-md-6">
-                                        <div class="input-group">
-                                            <label for="subject">subject <sup>*</sup></label>
-                                            <select name="subject" id="subject">
-                                                <option value="">Select a subject</option>
-                                                <option value="subject1">Subject 1</option>
-                                                <option value="subject2">Subject 2</option>
-                                                <option value="subject3">Subject 3</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="col-md-12">
-                                        <div class="input-group">
-                                            <label for="budget">your budget <span>(optional)</span></label>
-                                            <input type="number" name="budget" id="budget"
-                                                placeholder="A range budget for your project">
-                                        </div>
-                                    </div> -->
                                     <div class="col-md-6">
                                         <div class="input-group">
-                                            <label for="message">message</label>
-                                            <textarea name="message" id="message"
-                                                placeholder="Wrire your message here ..."></textarea>
+                                            <label for="message">Message</label>
+                                            <textarea name="message" id="message" placeholder="Write your message here ..."></textarea>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-md-12">
-                                        <div class="input-group upload-attachment">
-                                            <div>
-                                                <label for="upload-attachment">
-                                                    <i class="las la-cloud-upload-alt"></i> add an attachment
-                                                    <input type="file" name="file" id="upload-attachment">
-                                                </label>
-
-                                            </div>
-
-                                        </div>
-                                    </div> -->
                                     <div class="col-md-12">
                                         <div class="input-group submit-btn-wrap">
-                                            <button class="theme-btn" name="submit" type="submit" id="submit-form">send
-                                                message</button>
+                                            <button class="theme-btn" name="submit" type="submit" id="submit-form">Send Message</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                </section>
+                </section> -->
             </div>
         </div>
     </main>
